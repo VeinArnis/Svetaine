@@ -2,9 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>mainproject</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Projektas</title>
+    <link rel="stylesheet" href="mainstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+          rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+    <section class="header">
+        <nav>
+            <a href="main.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">OUR SERVICES</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
 
+    <div class="text-box">
+        <h1>Construction and Housing Market Specialists</h1>
+        <p>More than 50 years of experience</p>
+    </div>
+    </section>
+
+    <section class="services">
+        <h1>Our Services</h1>
+        <p class="trusted">Trusted Professionals</p>
+        <p>Our Services range from interior decorating, all the way to house planning and building!
+        <br>If you'd like to know more, please click on one of the links below and take a browse among the site.</p>
+        <div class="row">
+            <div class="services-col">
+                <h3>Interior Decoration</h3>
+                <img src="images/interior.png">
+                <div class="test">
+                    <a href="" class="hero-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="services-col">
+                <h3>House Planning</h3>
+                <img src="images/planning.png">
+                <div class="test">
+                    <a href="" class="hero-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="services-col">
+                <h3>Equipment Haul</h3>
+                <img src="images/machinery.png">
+                <div class="test">
+                    <a href="" class="hero-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <h1>Our Lastest Work</h1>
+        <p>Browse our gallery for ideas and tips, and see why we're recognised as the best of Vilnius</p>
+        <div class="row">
+            <div class="portfolio-col">
+                <img src="images/work1.png">
+            </div>
+
+            <div class="portfolio-col">
+                <img src="images/work2.png">
+            </div>
+
+            <div class="portfolio-col">
+                <img src="images/work3.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="choose">
+
+        <div class="container">
+            <h1>Why Choose Us</h1>
+            <img src="images/whyus3.png">
+        </div>
+
+    </section>
+
+    <section class="testimonials">
+        <h1>TESTIMONIALS</h1>
+        <p>What our customers are saying about us and our work</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="images/user1.png">
+                <div>
+                    <p>"Quite amazing if I must say,
+                    I just moved in and needed furnishings and a way to make my entire house look great and stylish,
+                    and this company sure provided!"</p>
+                    <h3>Claire Valentine</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="images/user2.png">
+                <div>
+                    <p>"Truly the best type of service one can expect out of such professionals with so many years
+                    under their belts, will do more business when the time arrives!"</p>
+                    <h3>Dredge Richter</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h1>Make sure to give us a call <br>if you want your home built like a King</h1>
+        <a href="" class="hero-btn">Contact</a>
+    </section>
+
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Our socials</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+
+    <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+    </script>
 </body>
 </html>
